@@ -1,6 +1,6 @@
 
     // Updated categories list
-    const categories = ['Все', 'Завтрак', 'Гарнир', 'Курица', 'Говядина', 'Морепродукты', 'Свинина','Салат', 'Субпродукты', 'Выпечка', 'Десерт', 'Прочее'];
+    const categories = ['Все','Фастфуд', 'Завтрак', 'Гарнир', 'Курица', 'Говядина', 'Морепродукты', 'Свинина','Салат', 'Субпродукты', 'Выпечка', 'Десерт', 'Прочее'];
 
     // Sample data with multiple categories per dish
     const dishes = [
@@ -551,7 +551,7 @@
     {
         id: 69,
         name: 'Шаурма классическая',
-        categories: ['Прочее'],
+        categories: ['Прочее', 'Фастфуд'],
         ingredients: 'лаваш, курица или говядина, овощи, соус',
         description: 'Популярная уличная еда в лаваше',
         imageUrl: 'https://avatars.mds.yandex.net/i?id=e62586233e36d1b21af9529d4c7e732a_l-9456276-images-thumbs&n=13'
@@ -559,7 +559,7 @@
     {
         id: 70,
         name: 'Шаурма с тунцом',
-        categories: ['Морепродукты'],
+        categories: ['Морепродукты', 'Фастфуд'],
         ingredients: 'лаваш, консервированный тунец, овощи, соус',
         description: 'Лёгкая шаурма с тунцом вместо мяса',
         imageUrl: 'https://i.pinimg.com/originals/9e/a0/0e/9ea00eb9bbdfbbca2f88889087734155.jpg'
@@ -567,7 +567,7 @@
     {
         id: 71,
         name: 'Гирос',
-        categories: ['Прочее'],
+        categories: ['Прочее', 'Фастфуд'],
         ingredients: 'пита, мясо (свинина/курица), овощи, соус цацики',
         description: 'Греческий аналог шаурмы',
         imageUrl: 'https://avatars.mds.yandex.net/get-altay/13793720/2a00000191c0aa49bf2e880e1840551babb8/orig'
@@ -575,7 +575,7 @@
     {
         id: 72,
         name: 'Тортилья с курицей',
-        categories: ['Курица'],
+        categories: ['Курица', 'Фастфуд'],
         ingredients: 'тортилья, куриное филе, перец, лук, сыр',
         description: 'Мексиканская лепёшка с курицей и овощами',
         imageUrl: 'https://www.edimdoma.ru/system/images/contents/0001/4107/popup/shutterstock_2011903688.jpg?1632992742'
@@ -583,7 +583,7 @@
     {
         id: 73,
         name: 'Цезарь ролл',
-        categories: ['Прочее'],
+        categories: ['Прочее', 'Фастфуд'],
         ingredients: 'лаваш, курица, салат, пармезан, соус цезарь',
         description: 'Рулет из лаваша с начинкой как в салате цезарь',
         imageUrl: 'https://scdn.chibbis.ru/live/products/d042b0d0d09d747419e6e2267dc73101.jpeg'
@@ -591,7 +591,7 @@
     {
         id: 74,
         name: 'Чизбургер с курицей',
-        categories: ['Курица'],
+        categories: ['Курица', 'Фастфуд'],
         ingredients: 'булочка, куриная котлета, сыр, салат, соус',
         description: 'Бургер с куриной котлетой и сыром',
         imageUrl: 'https://avatars.mds.yandex.net/i?id=bdcb44b28c86d5d159058ac134142d21_l-4420863-images-thumbs&n=13'
@@ -599,7 +599,7 @@
     {
         id: 75,
         name: 'Сосиски в тесте',
-        categories: ['Выпечка'],
+        categories: ['Выпечка', 'Фастфуд'],
         ingredients: 'сосиски, слоёное тесто, яйцо для смазки',
         description: 'Хрустящие сосиски в слоёном тесте',
         imageUrl: 'https://izba-nv.ru/images/product/62c1c11594fa617dc0cb6470e56878fb.jpg'
@@ -607,7 +607,7 @@
     {
         id: 76,
         name: 'Пицца пепперони',
-        categories: ['Выпечка'],
+        categories: ['Выпечка', 'Фастфуд'],
         ingredients: 'тесто, томатный соус, сыр моцарелла, пепперони',
         description: 'Классическая американская пицца с острыми колбасками',
         imageUrl: 'https://static.tildacdn.com/stor3365-6463-4935-b032-353734363838/65054836.jpg'
@@ -615,7 +615,7 @@
     {
         id: 77,
         name: 'Пицца с морепродуктами',
-        categories: ['Морепродукты', 'Выпечка'],
+        categories: ['Морепродукты', 'Выпечка', 'Фастфуд'],
         ingredients: 'тесто, соус, сыр, креветки, кальмары, мидии',
         description: 'Пицца с ассорти морепродуктов',
         imageUrl: 'https://scdn.chibbis.ru/live/products/bc7f7c1027542b4284aaff6e1f8553cc.jpeg'
@@ -623,7 +623,7 @@
     {
         id: 78,
         name: 'Пицца с курицей',
-        categories: ['Курица', 'Выпечка'],
+        categories: ['Курица', 'Выпечка', 'Фастфуд'],
         ingredients: 'тесто, соус, сыр, куриное филе, овощи',
         description: 'Пицца с курицей и дополнительными ингредиентами',
         imageUrl: 'https://cdn.lifehacker.ru/wp-content/uploads/2021/01/20_1611847434-1800x900.jpg'
@@ -631,7 +631,7 @@
     {
         id: 79,
         name: 'Пицца 4 сыра',
-        categories: ['Выпечка'],
+        categories: ['Выпечка', 'Фастфуд'],
         ingredients: 'тесто, моцарелла, горгонзола, пармезан, дорблю',
         description: 'Богатая пицца из четырёх сортов сыра',
         imageUrl: 'https://avatars.mds.yandex.net/get-altay/5120632/2a00000181b8eec89ed9d58df6f2e00cedb3/XXL_height'
@@ -639,7 +639,7 @@
     {
         id: 80,
         name: 'Треугольники с ветчиной и сыром',
-        categories: ['Выпечка'],
+        categories: ['Выпечка', 'Фастфуд'],
         ingredients: 'слоёное тесто, ветчина, сыр, яйцо',
         description: 'Выпечка из слоёного теста с начинкой',
         imageUrl: 'https://avatars.mds.yandex.net/i?id=8a7a8f4aedc65f1e38ce752056be812a_l-5652396-images-thumbs&n=13'
@@ -827,7 +827,15 @@
         ingredients: 'тесто, мясной фарш (свинина/говядина), лук, соль',
         description: 'Традиционные русские пельмени с мясной начинкой',
         imageUrl: 'https://img.restoclub.ru/uploads/place/7/a/4/3/7a43f2dbeefd4addddd3f9e140e0e988_w1200_h630.webp'
-    }
+    },
+        {
+            id: 104,
+            name: 'Пироженное картошка',
+            categories: ['Десерт'],
+            ingredients: 'Печенье юбилейное, масло, какао',
+            description: 'Пироженное картошка',
+            imageUrl: 'https://ic.pics.livejournal.com/smapse/90291932/2292046/2292046_original.png'
+        }
     ];
 
     // DOM Elements
