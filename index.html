@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main-content">
+
+    <div class="dishes-grid" id="dishesGrid">
+        <!-- Dishes will be populated here -->
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="filters-section">
+        <div class="filters-grid">
+            <div class="filter-group">
+                <label for="categoryFilter">Категория</label>
+                <select id="categoryFilter" class="filter-input">
+                    <option value="Все">Все</option>
+                    <option value="Завтрак">Завтрак</option>
+                    <option value="Гарнир">Гарнир</option>
+                    <option value="Курица">Курица</option>
+                    <option value="Говядина">Говядина</option>
+                    <option value="Морепродукты">Морепродукты</option>
+                    <option value="Свинина">Свинина</option>
+                    <option value="Салат">Салат</option>
+                    <option value="Субпродукты">Субпродукты</option>
+                    <option value="Выпечка">Выпечка</option>
+                    <option value="Десерт">Десерт</option>
+                    <option value="Прочее">Прочее</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="searchInput">Поиск</label>
+                <div class="input-with-icon">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" class="filter-input search-input" placeholder="Название, ингредиенты...">
+                </div>
+            </div>
+            <div class="filter-group">
+                <label for="ingredientsFilter">Ингредиенты</label>
+                <div class="input-with-icon">
+                    <i class="fas fa-filter filter-icon"></i>
+                    <input type="text" id="ingredientsFilter" class="filter-input filter-input" placeholder="Фильтр по ингредиентам...">
+                </div>
+            </div>
+        </div>
+
+        <div class="categories-section">
+            <div class="categories-header">
+                <h3>Категории</h3>
+            </div>
+            <div class="categories-list" id="categoriesList">
+                <span class="category-badge active" data-category="Все">Все</span>
+                <span class="category-badge" data-category="Завтрак">Завтрак</span>
+                <span class="category-badge" data-category="Гарнир">Гарнир</span>
+                <span class="category-badge" data-category="Курица">Курица</span>
+                <span class="category-badge" data-category="Говядина">Говядина</span>
+                <span class="category-badge" data-category="Морепродукты">Морепродукты</span>
+                <span class="category-badge" data-category="Свинина">Свинина</span>
+                <span class="category-badge" data-category="Салат">Салат</span>
+                <span class="category-badge" data-category="Субпродукты">Субпродукты</span>
+                <span class="category-badge" data-category="Выпечка">Выпечка</span>
+                <span class="category-badge" data-category="Десерт">Десерт</span>
+                <span class="category-badge" data-category="Прочее">Прочее</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
